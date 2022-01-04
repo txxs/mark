@@ -1,32 +1,22 @@
-# mycat 源码学习
 
-对于 mycat 应该有几个核心原理需要弄明白:
-
-1. mycat 与 mysql 是怎么交互的
-2. 前端应用是怎么和 mycat 交互的
-3. 前端应用的请求到落地在 mysql 库中，然后结果是怎么返回到应用的
-
-
-
-
-
----
-
-临时仓库
-
----
-
-## ServerParse
-命令解析，所用是解析出语句的命令是什么？
-
-```java
-@Test
-  public void testIsSelect() {
-      Assert.assertEquals(ServerParse.SELECT, 0xff & ServerParse.parse("select ..."));
-      Assert.assertEquals(ServerParse.SELECT, 0xff & ServerParse.parse("SELECT ..."));
-      Assert.assertEquals(ServerParse.SELECT, 0xff & ServerParse.parse("sELECt ..."));
-  }
-
-// 就是不知道为什么要进行位运算，返回，外面再位运算还原
-return (offset << 8) | SELECT;
-```
+- [CMS和G1的区别.md](CMS和G1的区别.md)
+- [G1原理详解.md](G1原理详解.md)
+- [Java虚拟机工具命令.md](Java虚拟机工具命令.md)
+- [JDK监控和故障处理工具总结.md](JDK监控和故障处理工具总结.md)
+- [JMM讲解.md](JMM讲解.md)
+- [JVM运行时数据区.md](JVM运行时数据区.md)
+- [newStudent做了什么.md](newStudent做了什么.md)
+- [zgc介绍.md](zgc介绍.md)
+- [一次生产CPU100%排查优化实践.md](一次生产CPU100%排查优化实践.md)
+- [二次线上JVM调优上线GC次数过多和promotionfailed.md](二次线上JVM调优上线GC次数过多和promotionfailed.md)
+- [使用的JVM参数.md](使用的JVM参数.md)
+- [内存泄露查询工具.md](内存泄露查询工具.md)
+- [响应优先或吞吐优先设置.md](响应优先或吞吐优先设置.md)
+- [垃圾回收器从Serial到ZGC.md](垃圾回收器从Serial到ZGC.md)
+- [如何优雅的关闭java服务.md](如何优雅的关闭java服务.md)
+- [如何找出JVM线程死锁.md](如何找出JVM线程死锁.md)
+- [对象搜索算法与回收算法.md](对象搜索算法与回收算法.md)
+- [类加载器.md](类加载器.md)
+- [类加载过程.md](类加载过程.md)
+- [类文件结构.md](类文件结构.md)
+- [虚拟机参数.md](虚拟机参数.md)

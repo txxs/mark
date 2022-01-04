@@ -1,32 +1,20 @@
-# mycat 源码学习
 
-对于 mycat 应该有几个核心原理需要弄明白:
-
-1. mycat 与 mysql 是怎么交互的
-2. 前端应用是怎么和 mycat 交互的
-3. 前端应用的请求到落地在 mysql 库中，然后结果是怎么返回到应用的
-
-
-
-
-
----
-
-临时仓库
-
----
-
-## ServerParse
-命令解析，所用是解析出语句的命令是什么？
-
-```java
-@Test
-  public void testIsSelect() {
-      Assert.assertEquals(ServerParse.SELECT, 0xff & ServerParse.parse("select ..."));
-      Assert.assertEquals(ServerParse.SELECT, 0xff & ServerParse.parse("SELECT ..."));
-      Assert.assertEquals(ServerParse.SELECT, 0xff & ServerParse.parse("sELECt ..."));
-  }
-
-// 就是不知道为什么要进行位运算，返回，外面再位运算还原
-return (offset << 8) | SELECT;
-```
+- [ArrayList集合加入1万条数据.md](ArrayList集合加入1万条数据.md)
+- [Arrays.asList获得的List使用时需要注意什么.md](Arrays.asList获得的List使用时需要注意什么.md)
+- [bean作用域生命周期.md](bean作用域生命周期.md)
+- [Comparable与Comparator的区别.md](Comparable与Comparator的区别.md)
+- [CopyOnWriteArrayList原理.md](CopyOnWriteArrayList原理.md)
+- [finally执行顺序.md](finally执行顺序.md)
+- [hashmap原理.md](hashmap原理.md)
+- [hashmap的死循环详解.md](hashmap的死循环详解.md)
+- [Java集合框架更多细节.md](Java集合框架更多细节.md)
+- [jdk5-10.md](jdk5-10.md)
+- [RestControllerVSController.md](RestControllerVSController.md)
+- [Set如何保证元素不重复.md](Set如何保证元素不重复.md)
+- [springmvc.md](springmvc.md)
+- [spring中的设计模式.md](spring中的设计模式.md)
+- [spring问题.md](spring问题.md)
+- [动态代理两种方式及其区别.md](动态代理两种方式及其区别.md)
+- [反射有什么作用.md](反射有什么作用.md)
+- [异常原理分类.md](异常原理分类.md)
+- [面向对象三大特征和5个原则.md](面向对象三大特征和5个原则.md)
