@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export JAVA_HOME="/usr/local/java7"
+
+#编译打包
+mvn clean deploy
