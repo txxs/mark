@@ -1,0 +1,3 @@
+### MYSQL使用
+1. B-Tree索引主要作用于WHERE和ORDER BY子句，所以使用的时候一定要在此处使用
+2. update和delete的时候一定要命中索引，否则就是锁全表
