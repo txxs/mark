@@ -1,13 +1,12 @@
+### CMS和G1的区别
 
 原文地址：
-
+``
 https://blog.csdn.net/xzp_12345/article/details/81839026
-
 http://www.woowen.com/java/2016/12/10/G1%20CMS%E5%8C%BA%E5%88%AB/
-
 https://www.jianshu.com/p/bdd6f03923d1
-
 https://huzb.me/2019/02/21/CMS-G1%E5%92%8CZGC/
+``
 
 1.新生代
 

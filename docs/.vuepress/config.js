@@ -16,15 +16,14 @@ const interviewSc = require('../interview')
 
 const javacollectionSc = require('../java/collection')
 const javaioSc = require('../java/io')
-const javajvmSc = require('../java/jvm')
 const javaspringSc = require('../java/spring')
 const javathreadSc = require('../java/thread')
 
 const kafkaSc = require('../kafka')
 
-const q&ainterviewSc = require('../q&a/interview')
-const q&aselSc = require('../q&a/self')
-const q&atujiSc = require('../q&a/tuji')
+const qainterviewSc = require('../q&a/interview')
+const qaselSc = require('../q&a/self')
+const qatujiSc = require('../q&a/tuji')
 
 const selfSc = require('../self')
 
@@ -92,22 +91,21 @@ module.exports = {
       },
       {
         text: '业务', items: [
-          { text: 'buss', link: '/buss/' },
-          { text: '高级知识篇', link: '/elasticsearch-senior/' }
+          { text: 'buss', link: '/buss/' }
         ]
       },
       {
         text: '数据库', items: [
-          { text: 'ES', link: '/db/es' },
-          { text: 'Mysql', link: '/db/mysql' },
-          { text: 'redis', link: '/db/redis' },
+          { text: 'ES', link: '/db/es/' },
+          { text: 'Mysql', link: '/db/mysql/' },
+          { text: 'redis', link: '/db/redis/' },
         ]
       },
       {
          text: '分布式', items: [
-                { text: '理论', link: '/distri/the' },
-                { text: 'rpc', link: '/distri/rpc' },
-                { text: 'zk', link: '/distri/zk' },
+                { text: '理论', link: '/distri/the/' },
+                { text: 'rpc', link: '/distri/rpc/' },
+                { text: 'zk', link: '/distri/zk/' },
               ]
       },
       {
@@ -122,11 +120,10 @@ module.exports = {
       },
       {
         text: 'java', items: [
-          { text: 'collection', link: '/java/collection' },
-          { text: 'jvm', link: '/java/jvm' },
-          { text: 'thread', link: '/java/thread' },
-          { text: 'io', link: '/java/io' },
-          { text: 'spring', link: '/java/spring' },
+          { text: 'collection', link: '/java/collection/' },
+          { text: 'thread', link: '/java/thread/' },
+          { text: 'io', link: '/java/io/' },
+          { text: 'spring', link: '/java/spring/' },
         ]
       },
       {
@@ -136,14 +133,14 @@ module.exports = {
       },
       {
         text: 'q&a', items: [
-          { text: '问答', link: '/q&a/interview' },
-          { text: '自己', link: '/q&a/self' },
-          { text: '突击', link: '/q&a/tuji' }
+          { text: '问答', link: '/q&a/interview/' },
+          { text: '自己', link: '/q&a/self/' },
+          { text: '突击', link: '/q&a/tuji/' }
         ]
       },
       {
          text: '总结', items: [
-           { text: '问答', link: '/self' }
+           { text: '问答', link: '/self/' }
          ]
        }
     ],
@@ -166,15 +163,14 @@ module.exports = {
 
             '/ava/collection/': javacollectionSc(),
             '/java/io/': javaioSc(),
-            '/java/jvm/': javajvmSc(),
             '/java/spring/': javaspringSc(),
             '/java/thread/': javathreadSc(),
 
             '/kafka/': kafkaSc(),
 
-            '/q&a/interview/': q&ainterviewSc(),
-            '/q&a/self/': q&aselSc(),
-            '/q&a/tuji/': q&atujiSc(),
+            '/q&a/interview/': qainterviewSc(),
+            '/q&a/self/': qaselSc(),
+            '/q&a/tuji/': qatujiSc(),
 
             '/self/': selfSc()
     }
