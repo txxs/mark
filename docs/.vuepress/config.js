@@ -161,7 +161,7 @@ module.exports = {
 
             '/interview/': interviewSc(),
 
-            '/ava/collection/': javacollectionSc(),
+            '/java/collection/': javacollectionSc(),
             '/java/io/': javaioSc(),
             '/java/spring/': javaspringSc(),
             '/java/thread/': javathreadSc(),
