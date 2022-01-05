@@ -1,24 +1,37 @@
-const introduceGenSidebarConfig = require('../introduce')
-const imoccDesignPatternGenSidebarConfig = require('../imocc/design_pattern')
-const designPatternGenSidebarConfig = require('../design_pattern')
-const mycatGenSidebarConfig = require('../mycat')
-const mycat2GenSidebarConfig = require('../mycat2')
-const gitGenSidebarConfig = require('../git')
-const xiemengyuanGenSidebarConfig = require('../xiemengyuan')
-const elasticsearchCoreSC = require('../elasticsearch-core')
-const elasticsearchSeniorSC = require('../elasticsearch-senior')
-const cachePdpSc = require('../cache-pdp')
-const postsSc = require('../posts')
-const springCloudTutorialSc = require('../spring-cloud-tutorial')
-const cssZxxSc = require('../css-zxx')
-const gitScmSc = require('../git-scm')
-const backEndStorageSc = require('../back-end-storage')
-const middlegroundSc = require('../middle-office')
-const oath2Sc = require('../oath2')
-const regularSc = require('../regular')
+const algoSc = require('../algo')
+
+const bussSc = require('../buss')
+
+const dbesSc = require('../db/es')
+const dbmysqlSc = require('../db/mysql')
+const dbredisSc = require('../db/redis')
+
+const distrirpcSc = require('../distri/rpc')
+const distritheSc = require('../distri/the')
+const distrizkSc = require('../distri/zk')
+
+const internetSc = require('../internet')
+
+const interviewSc = require('../interview')
+
+const javacollectionSc = require('../java/collection')
+const javaioSc = require('../java/io')
+const javajvmSc = require('../java/jvm')
+const javaspringSc = require('../java/spring')
+const javathreadSc = require('../java/thread')
+
+const kafkaSc = require('../kafka')
+
+const q&ainterviewSc = require('../q&a/interview')
+const q&aselSc = require('../q&a/self')
+const q&atujiSc = require('../q&a/tuji')
+
+const selfSc = require('../self')
+
+
 
 module.exports = {
-  title: 'MRCODE-BOOK',
+  title: 'Mark',
   description: '用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术，如：Java、Git、ElasticSearch、MyCat、设计模式、Gradle、Vue - mrcode.cn',
   base: '/note-book/', // gh-page 中是增加了项目名
   dest: 'build/.vuepress/dist',  // 目录配置在外,纯粹是有代码洁癖和强迫症，并不能规避开发模式下同时构建不报错的问题
@@ -71,112 +84,99 @@ module.exports = {
       // }
     },
     nav: [
-      { text: '博客（零散文章）', link: '/posts/' },
+      { text: '博客github', link: 'https://txxs.github.io/record/' },
       {
-        text: '设计模式', items: [
-          { text: '设计模式（慕课）', link: '/imocc/design_pattern/' },
-          { text: '研磨设计模式（李兴华）', link: '/design_pattern/' }
+        text: '工程算法', items: [
+          { text: '个人总结', link: '/algo/' }
         ]
       },
       {
-        text: 'Elasticsearch', items: [
-          { text: '核心知识篇', link: '/elasticsearch-core/' },
+        text: '业务', items: [
+          { text: 'buss', link: '/buss/' },
           { text: '高级知识篇', link: '/elasticsearch-senior/' }
         ]
       },
       {
-        text: '缓存架构-亿级流量电商详情页系统实战',
-        ariaLabel: '缓存架构-亿级流量电商详情页系统实战',
-        items: [
-          {
-            text: '综合性导航',
-            items: [
-              { text: '全目录导航', link: '/cache-pdp/' },
-              { text: '第一版（001 ~ 123 章）', link: '/cache-pdp/001-introduce.md' },
-              { text: '第二版（124 ~ 195 章）', link: '/cache-pdp/124.md' },
-              { text: '课程总结（难题与解决方案）', link: '/cache-pdp/121.md' }
-            ]
-          },
-          {
-            text: '精彩知识精选',
-            items: [
-              { text: 'Redis 篇（redis 企业级集群架构）', link: '/cache-pdp/redis/007.md' },
-              { text: '多级缓存架构设计', link: '/cache-pdp/035.md' },
-              { text: '数据库 + 缓存双写一致性解决方案', link: '/cache-pdp/040.md' },
-              { text: '缓存维度化拆分解决方案', link: '/cache-pdp/045.md' },
-              { text: '缓存命中率提升解决方案', link: '/cache-pdp/051.md' },
-              { text: '缓存并发重建冲突解决方案', link: '/cache-pdp/057.md' },
-              { text: '缓存预热解决方案', link: '/cache-pdp/069.md' },
-              { text: '热点缓存自动降级方案', link: '/cache-pdp/077.md' },
-              { text: '缓存雪崩解决方案', link: '/cache-pdp/110.md' },
-              { text: '缓存穿透解决方案', link: '/cache-pdp/117.md' },
-              { text: '缓存失效解决方案', link: '/cache-pdp/119.md' },
-              { text: '高可用分布式系统架构设计（hystrix 篇）', link: '/cache-pdp/hystrix/084.md' },
-              { text: 'spring boot 整合 ehcache', link: '/cache-pdp/047.md' },
-              { text: '史上最通俗易懂 Storm 教程', link: '/cache-pdp/storm/062.md' }
-            ]
-          }
+        text: '数据库', items: [
+          { text: 'ES', link: '/db/es' },
+          { text: 'Mysql', link: '/db/mysql' },
+          { text: 'redis', link: '/db/redis' },
         ]
       },
       {
-        text: '更多', items: [
-          { text: '本笔记介绍', link: '/introduce/' },
-          { text: 'Linux 基础篇', link: 'https://zq99299.github.io/linux-tutorial/' },
-          { text: 'Spring Cloud', link: '/spring-cloud-tutorial/' },
-          { text: 'CSS 深入理解（张鑫旭）', link: '/css-zxx/' },
-          { text: '正则入门', link: '/regular/' },
-          {
-            text: '思路拓展', items: [
-              { text: '后端存储实战', link: '/back-end-storage/' },
-              { text: '说透中台', link: '/middle-office/' },
-              { text: 'Oath 2.0 实战', link: '/oath2/' },
-            ]
-          },
-          {
-            text: 'Git', items: [
-              { text: 'Git 零散知识', link: '/git/' },
-              { text: 'Git 系统学习笔记', link: '/git-scm/' },
-            ]
-          },
-          {
-            text: 'Mycat', items: [
-              { text: 'Mycat 1', link: '/mycat/' },
-              { text: 'Mycat 2', link: '/mycat2/' }
-            ]
-          },
-          {
-            text: '笔记精选汇总',
-            items: [
-              { text: 'GitHub 站', link: 'https://github.com/zq99299/repository-summary' },
-              { text: '国内镜像站', link: 'http://book.mrcode.cn/' }
-            ]
-          },
-          { text: '博客文章 /_posts/ 路径失效说明', link: '/posts-failure.md' },
+         text: '分布式', items: [
+                { text: '理论', link: '/distri/the' },
+                { text: 'rpc', link: '/distri/rpc' },
+                { text: 'zk', link: '/distri/zk' },
+              ]
+      },
+      {
+        text: '网络', items: [
+          { text: '网络', link: '/internet/' }
         ]
-      }
-      /*
-      {text: 'MyCat', link: '/mycat/'},
-      {text: 'Vue', link: '/vue/'},*/
+      },
+      {
+        text: '问答', items: [
+          { text: '问答', link: '/interview/' }
+        ]
+      },
+      {
+        text: 'java', items: [
+          { text: 'collection', link: '/java/collection' },
+          { text: 'jvm', link: '/java/jvm' },
+          { text: 'thread', link: '/java/thread' },
+          { text: 'io', link: '/java/io' },
+          { text: 'spring', link: '/java/spring' },
+        ]
+      },
+      {
+        text: 'kafka', items: [
+          { text: 'kafka', link: '/kafka/' }
+        ]
+      },
+      {
+        text: 'q&a', items: [
+          { text: '问答', link: '/q&a/interview' },
+          { text: '自己', link: '/q&a/self' },
+          { text: '突击', link: '/q&a/tuji' }
+        ]
+      },
+      {
+         text: '总结', items: [
+           { text: '问答', link: '/self' }
+         ]
+       }
     ],
     sidebar: {
-      '/introduce/': introduceGenSidebarConfig(),
-      '/imocc/design_pattern/': imoccDesignPatternGenSidebarConfig(),
-      '/design_pattern/': designPatternGenSidebarConfig(),
-      '/mycat/': mycatGenSidebarConfig(),
-      '/mycat2/': mycat2GenSidebarConfig(),
-      '/git/': gitGenSidebarConfig(),
-      '/xiemengyuan/': xiemengyuanGenSidebarConfig(),
-      '/elasticsearch-senior/': elasticsearchSeniorSC(),
-      '/elasticsearch-core/': elasticsearchCoreSC(),
-      '/cache-pdp/': cachePdpSc(),
-      '/posts/': postsSc(),
-      '/spring-cloud-tutorial/': springCloudTutorialSc(),
-      '/css-zxx/': cssZxxSc(),
-      '/git-scm/': gitScmSc(),
-      '/back-end-storage/': backEndStorageSc(),
-      '/middle-office/': middlegroundSc(),
-      '/oath2/': oath2Sc(),
-      '/regular/': regularSc()
+            '/algo/': algoSc(),
+            '/buss/': bussSc(),
+
+            '/db/es/': dbesSc(),
+            '/db/mysql/': dbmysqlSc(),
+            '/db/redis/': dbredisSc(),
+
+
+      	  '/distri/rpc/': distrirpcSc(),
+            '/distri/the/': distritheSc(),
+            '/distri/zk/': distrizkSc(),
+
+            '/internet/': internetSc(),
+
+            '/interview/': interviewSc(),
+
+            '/ava/collection/': javacollectionSc(),
+            '/java/io/': javaioSc(),
+            '/java/jvm/': javajvmSc(),
+            '/java/spring/': javaspringSc(),
+            '/java/thread/': javathreadSc(),
+
+            '/kafka/': kafkaSc(),
+
+            '/q&a/interview/': q&ainterviewSc(),
+            '/q&a/self/': q&aselSc(),
+            '/q&a/tuji/': q&atujiSc(),
+
+            '/self/': selfSc()
     }
   },
   plugins: [
