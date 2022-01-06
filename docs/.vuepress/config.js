@@ -44,7 +44,7 @@ module.exports = {
   //     // }
   // },
   head:[
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/mlogo.svg' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
   ],
   markdown: {
@@ -57,7 +57,7 @@ module.exports = {
     sidebarDepth: 3, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
     lastUpdated: '上次更新', // string | boolean
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'https://github.com/zq99299/note-book',
+    repo: 'https://github.com/txxs/mark',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: 'GitHub',
