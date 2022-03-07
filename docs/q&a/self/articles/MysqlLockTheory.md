@@ -248,6 +248,8 @@ redo log buffer主要可以在buffer pool数据还未刷盘宕机时保证事务
 
 > 引用自：https://mp.weixin.qq.com/s/OYDfxgzNAOUGFILGk__CBQ
 
+> 事务的隔离级别一个大背景是：同一个事务读取的数据应该是一致的。
+
 事务的4个隔离级别以及对应的3种异常：
 
 ![图片](https://txxs.github.io/pic/q&a/WX20210823-192114@2-13x.png)
