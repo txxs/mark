@@ -24,6 +24,7 @@ const kafkaSc = require('../kafka')
 const qainterviewSc = require('../q&a/interview')
 const qaselSc = require('../q&a/self')
 const qatujiSc = require('../q&a/tuji')
+const keySc = require('../q&a/key')
 
 const selfSc = require('../self')
 
@@ -135,7 +136,8 @@ module.exports = {
         text: 'q&a', items: [
           { text: '问答', link: '/q&a/interview/' },
           { text: '自己', link: '/q&a/self/' },
-          { text: '突击', link: '/q&a/tuji/' }
+          { text: '突击', link: '/q&a/tuji/' },
+          { text: 'key', link: '/q&a/key/' }
         ]
       },
       {
@@ -171,6 +173,7 @@ module.exports = {
             '/q&a/interview/': qainterviewSc(),
             '/q&a/self/': qaselSc(),
             '/q&a/tuji/': qatujiSc(),
+            '/q&a/key/': keySc(),
 
             '/self/': selfSc()
     }
