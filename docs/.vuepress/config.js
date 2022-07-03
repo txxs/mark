@@ -149,8 +149,8 @@ module.exports = {
        }
     ],
     sidebar: {
-            '/algo/project': algoProjectSc(),
-            '/algo/sum': algoSumSc(),
+            '/algo/project/': algoProjectSc(),
+            '/algo/sum/': algoSumSc(),
 
             '/buss/': bussSc(),
 
