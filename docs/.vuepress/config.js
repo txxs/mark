@@ -1,5 +1,5 @@
-const algoProjectSc = require('../algo/project')
 const algoSumSc = require('../algo/sum')
+const algoProjectSc = require('../algo/project')
 
 const bussSc = require('../buss')
 
