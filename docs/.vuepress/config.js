@@ -1,4 +1,5 @@
-const algoSc = require('../algo')
+const algoProjectSc = require('../algo/project')
+const algoSumSc = require('../algo/sum')
 
 const bussSc = require('../buss')
 
@@ -86,8 +87,9 @@ module.exports = {
     nav: [
       { text: '博客github', link: 'https://txxs.github.io/record/' },
       {
-        text: '工程算法', items: [
-          { text: '个人总结', link: '/algo/' }
+        text: '算法', items: [
+          { text: '工程算法', link: '/algo/project/' },
+          { text: '常用算法', link: '/algo/sum/' },
         ]
       },
       {
@@ -147,7 +149,9 @@ module.exports = {
        }
     ],
     sidebar: {
-            '/algo/': algoSc(),
+            '/algo/project': algoProjectSc(),
+            '/algo/sum': algoSumSc(),
+
             '/buss/': bussSc(),
 
             '/db/es/': dbesSc(),
